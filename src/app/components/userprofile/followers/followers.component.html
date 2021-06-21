@@ -1,0 +1,49 @@
+<div class="mt2rem bgwhite2 pd2rem">
+  <div class="containerf">
+ <div class="col-2">
+<span><h3>Followers</h3> </span>
+</div>
+<div class="col-2">
+  <span class="fr"><i class="fa fa-search"></i></span>
+</div>
+</div>
+
+<div class="dfovfs text-left listport pt-2rem">
+  <div (click)="activeClass('User')" class="p-2remm col-md-3"><span class="pb-1rem"  [ngClass]="{'borderblue': active === 'User'}">  User</span></div>
+  <div (click)="activeClass('Education')"  class="p-2remm col-md-3"><span class="pb-1rem" [ngClass]="{'borderblue': active === 'Education'}"> Education Agent</span></div>
+  <div (click)="activeClass('Institution')"  class="p-2remm col-md-3"><span class="pb-1rem" [ngClass]="{'borderblue': active === 'Institution'}"> Institution</span></div>
+  <div (click)="activeClass('Company')" class="p-2remm col-md-3"><span  [ngClass]="{'borderblue': active === 'Company'}"> Company</span></div>
+</div>
+
+
+
+<div class="grid-container">
+  <div class="item1">
+    <img class="w-50px avatar2" src="../../../../assets/imgs/profilephoto.jpg" >
+  </div>
+  <div class="item2">
+    <h4 class="m-0 colorb2">Ashlynn Ella </h4>
+    <div>
+      <h5 class="colorlb"> International Baccalaureate   </h5>
+
+  </div>
+  <div>
+    <p  class="colorfl">   Kuala Lumpur, Malaysia
+    </p>
+  </div>
+  <div>
+    <p class="colorb2">   12 mutual friends
+    </p>
+  </div>
+
+  </div>
+  <div class="item3 cetner">
+    <div class="">
+      <Button class="bfollow"> Follow</Button>
+    </div>
+
+  </div>
+  </div>
+
+  </div>
+

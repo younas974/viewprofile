@@ -1,0 +1,65 @@
+<div class="mt2rem bgwhite2 pd2rem">
+  <div><p>About Me</p></div>
+  <div class="row pt-2rem" #vedios>
+    <div class="col-md-4 col-sm-4 ">
+      <div class="cont2">
+    <input type='file' class="visib-hid" id="uploadvedio" (change)="onSelectFile($event)" hidden />
+
+    <label class="foruploadv label2" for="uploadvedio"><div>  <i class="fa fa-video-camera vedioiconam" aria-hidden="true"></i></div>
+        <div class="text-center pt-1rem coloramv"> <span class="fs-12px">Tell us a little little about you! </span></div>
+  </label>
+
+      <div *ngIf="(format==='video' && url) || this.aboutmev[0]" class="content">
+
+        <span class="timeduration">{{vedioduration}}</span>
+        <img   class="mr-10px aboumvediti" src="../../../../assets/icons/editv.svg" />
+        <video   (click)="playVideo($event, 'isplay', 0)"  [src]="this.aboutmev[0].src" class="objfitc" *ngIf="(format==='video' && url) || this.aboutmev[0]" height="275" width="230" ></video> <br/>
+        <img (click)="playVideo($event, 'isplay', 0)" *ngIf="!isplay"  class="vedioic" src="../../../../assets/icons/playvedio.png" />
+          <p  *ngIf="!isplay" class="aboutmetext">This vedio is about me, thank you for watching</p>
+      </div>
+    </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 ">
+        <div class="cont2">
+      <input type='file' class="visib-hid" id="uploadvedio" (change)="onSelectFile($event)" hidden />
+
+      <label class="foruploadv label2" for="uploadvedio"><div>  <i class="fa fa-video-camera vedioiconam" aria-hidden="true"></i></div>
+          <div class="text-center pt-1rem coloramv"> <span class="fs-12px">Tell us a little little about you! </span></div>
+    </label>
+
+        <div *ngIf="(format==='video' && url) || this.aboutmev[1]" class="content">
+          <span class="timeduration">{{timev2}}</span>
+          <img class="mr-10px aboumvediti" src="../../../../assets/icons/editv.svg" />
+        <video (click)="playVideo($event, 'isplay2', 1)" [src]="this.aboutmev[1].src" class="objfitc" *ngIf="(format==='video' && url) || this.aboutmev[1]" height="275" width="230" ></video><br/>
+
+        <img (click)="playVideo($event, 'isplay2', 1)" *ngIf="!isplay2"  class="vedioic" src="../../../../assets/icons/playvedio.png" />
+        <p  *ngIf="!isplay2" class="aboutmetext">This vedio is about me, thank you for watching</p>
+      </div>
+      </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 ">
+          <div class="cont2">
+        <input type='file' class="visib-hid" id="uploadvedio" (change)="onSelectFile($event)" hidden />
+
+        <label class="foruploadv label2" for="uploadvedio"><div>  <i class="fa fa-video-camera vedioiconam" aria-hidden="true"></i></div>
+            <div class="text-center pt-1rem coloramv"> <span class="fs-12px">Tell us a little little about you! </span></div>
+      </label>
+
+          <div *ngIf="(format==='video' && url) || this.aboutmev[2]" class="content">
+            <span class="timeduration">{{vedioduration}}</span>
+            <img class="mr-10px aboumvediti" src="../../../../assets/icons/editv.svg" />
+            <video (click)="playVideo($event, 'isplay3',2)" [src]="this.aboutmev[2].src" class="objfitc" *ngIf="(format==='video' && url) || this.aboutmev[2]" height="275" width="230" ></video> <br/>
+          <img (click)="playVideo($event, 'isplay3', 2)" *ngIf="!isplay3"  class="vedioic" src="../../../../assets/icons/playvedio.png" />
+          <p  *ngIf="!isplay3" class="aboutmetext">This vedio is about me, thank you for watching</p>
+        </div>
+        </div>
+          </div>
+
+  </div>
+
+
+  </div>
+
+

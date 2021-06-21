@@ -1,0 +1,42 @@
+<div class="mt2rem bgwhite2 pd2rem">
+  <div class="containerf">
+ <div class="col-2">
+<span><h3>Verify your profile</h3> </span>
+</div>
+<div class="col-2">
+  <span class="fr"><img class="mr-10px" src="/assets/icons/isign.svg" /></span>
+</div>
+</div>
+
+<div>
+
+  <div class="containerf mt-2rem">
+    <div class="col-5p">
+   <span class="fr">
+     <i class="far fa-circle circileicon"></i></span>
+   </div>
+   <div class="col-95p mt-12px">
+    <div *ngFor="let item of maxx; let i=index" >
+
+      <div *ngIf="i<b"  class="br-unit br-selected " >
+      </div>
+
+      <div *ngIf="(i<rate && i>=b) || (i>rate && i<=b) "  class="br-unit br-half " >
+      </div>
+
+      <div *ngIf="i>b"  class="br-unit" >
+      </div>
+    </div>
+    <i class="fa fa-check-circle progressbl"></i>
+
+   </div>
+
+   </div>
+
+
+
+
+
+
+</div>
+</div>

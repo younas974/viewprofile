@@ -1,0 +1,25 @@
+<div class="mt2rem bgwhite2 pd2rem">
+
+   <div class="containerf">
+ <div class="col-2">
+<span><h3>Skills and Endorsement </h3> </span>
+</div>
+<div class="col-2">
+
+  <span class="fr"><img class="mr-10px" src="/assets//icons//edit.svg" /></span>
+
+</div>
+</div>
+
+  <div  class="pt-2rem">
+    <div class="row">
+      <div class="col-md-4 col-sm-4" *ngFor="let item of skillsendorsment" >
+        <h5 class="fw-normal">  {{item.title}}</h5>
+        <star-rating [value]="item.rating" [totalstars]="5" [checkedcolor]="'#FFC107'" [uncheckedcolor]="'#CFCFCF'" [size]="'24px'" [readonly]="true" (rate)="onRate($event)"></star-rating>
+      </div>
+
+
+    </div>
+  </div>
+
+  </div>

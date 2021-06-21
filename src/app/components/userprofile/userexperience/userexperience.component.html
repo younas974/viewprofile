@@ -1,0 +1,38 @@
+<div class="mt2rem bgwhite2 pd2rem">
+  <div class="containerf">
+    <div class="col-2">
+   <span><h3>Work Experience</h3> </span>
+   </div>
+   <div class="col-2">
+     <span class="fr colorb2"><img class="mr-10px" src="/assets//icons//addicon.svg" /> Add Work Experience</span>
+   </div>
+   </div>
+<div class="row pt-2rem" *ngFor="let item of workexp">
+  <div class="col-md-1 col-sm-1 col-xs-3">
+    <img class="w-50px" [src]="item.company.logo" >
+  </div>
+  <div class="col-md-11 col-sm-11 col-xs-9"  >
+    <div class="containerf">
+      <div class="col-2">
+     <h5 class="m-0 fw-normal">{{item.company.name}}</h5>
+     </div>
+     <div class="col-2">
+       <span class="fr colorb2"><img class="mr-10px" src="/assets//icons//edit.svg" /></span>
+     </div>
+     </div>
+
+    <div>
+      <h5 class="fw-n fw-normal"> {{item.title}}      </h5>
+
+  </div>
+  <div>
+    <p>  {{item.company.city}} | {{item.tenure}}</p>
+
+</div>
+  </div>
+  <i class="fa fa-angle-down fs-36px ml46" ></i>
+</div>
+<div>
+
+</div>
+</div>

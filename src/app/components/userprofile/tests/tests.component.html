@@ -1,0 +1,33 @@
+<div class="mt2rem bgwhite2 pd2rem">
+  <div class="containerf">
+ <div class="col-2">
+<span><h3>Tests</h3> </span>
+</div>
+</div>
+
+<div class="row linh pt-2rem" *ngFor="let item of tests" >
+  <div class="dinb2 v-at w-10m">
+    <img class="w-50px avatar4" src="../../../../assets/imgs/profilephoto.jpg" >
+  </div>
+  <div class="dinb2 w-90m">
+    <h4 class="m-0 ">{{item.name}} </h4>
+
+  <div>
+    <p class="">
+        {{item.discription}}
+    </p>
+  </div>
+  <div>
+  <span [ngClass]="{'dot2': item.status === 'complete'}" ></span>  <span [ngClass]="{'dot': item.status === 'incomplete'}" ></span><span [ngClass]="{'colorcomp': item.status === 'complete'}" >{{item.status}} </span>
+  </div>
+  </div>
+<div class="dinb2 fr">
+    <button class="colorfapen fw-b buttontest" *ngIf="item.status=='complete'" >  Results </button>
+    <button class="colorfapen fw-b buttontest" *ngIf="item.status=='incomplete'" >  Continue </button>
+</div>
+  </div>
+<div class="text-center"> <p class="colorvm"> View more tests </p> </div>
+  </div>
+
+
+

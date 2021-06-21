@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-md-8 linep pl-3rem bgwhite">
+    <h4>{{this.user.name}} </h4>
+    <div>
+      <span> {{this.user.location}} </span> &#8226;   <span> {{this.user.profession}} </span> &#8226;  <span> <a>{{this.user.followers}} Followers</a></span>
+    </div>
+
+    <div >
+      <span> Looking for:</span>
+      <span *ngFor="let item of user.lookingfor; let i=index" >
+        <span class="colorb" *ngIf="i < this.user.lookingfor.length-1" > {{item.name + ','}} </span>
+        <span class="colorb" *ngIf="i == this.user.lookingfor.length-1" > {{item.name }} </span>
+      </span>
+
+
+    </div>
+    <div class="pb1rem">
+      <span *ngFor="let item of this.user.habits;  let i=index">
+        <span class="" *ngIf="i < this.user.habits.length-1" > {{item.name + ','}} </span>
+        <span class="" *ngIf="i == this.user.habits.length-1" > {{item.name }} </span>
+       </span>
+    </div>
+
+    <button class="buttonedit"> Edit profile <img class="ediproficon" src="/assets//icons//edit.svg" /> </button>
+   <img src="/assets/icons/dots.svg"/>
+  </div>
+
+
+  <div class="col-md-4 pl-3rem bgwhite">
+    <p class="linep">
+      <i class="fa fa-graduation-cap"></i><span>Studied at: </span> <span><a>{{this.user.education.studiedat}}</a></span>
+      <br />
+      <i class="">  <img class="w-10px" src="../../../assets/icons//Picture3.svg"> </i> <span class="colorb"> {{this.user.education.cgpa}}</span> CGPA
+      <br />
+      <img class="ielts" src="/assets/icons/ielts.png"/><span class="colorb" >{{this.user.education.ielts}}</span> IELTS | <span class="colorb">{{this.user.education.toefl}}</span> TOEFL
+    <br/>
+    <img class="ielts" src="/assets/icons/participate.svg"/>{{this.user.education.achievments}}
+    </p>
+  </div>
+
+</div>
+
+<div class="dfovfs text-center listport">
+  <div (click)="activeClass('Profile')" class="p-2remm col-md-1"><span [ngClass]="{'borderblue': active === 'Profile'}">  Profile</span></div>
+  <div (click)="activeClass('Post')"  class="p-2remm col-md-1"><span [ngClass]="{'borderblue': active === 'Post'}"> Post</span></div>
+  <div (click)="activeClass('Pathway')"  class="p-2remm col-md-1"><span [ngClass]="{'borderblue': active === 'Pathway'}"> Pathway</span></div>
+  <div (click)="activeClass('Gigs')" class="p-2remm col-md-1"><span [ngClass]="{'borderblue': active === 'Gigs'}"> Gigs</span></div>
+  <div (click)="activeClass('Portfolio')" class="p-2remm col-md-1"><span [ngClass]="{'borderblue': active === 'Portfolio'}"> Portfolio</span></div>
+  <div (click)="activeClass('Events')" class="p-2remm col-md-1"><span [ngClass]="{'borderblue': active === 'Events'}"> Events</span></div>
+  <div (click)="activeClass('Gallery')" class="p-2remm col-md-1"><span [ngClass]="{'borderblue': active === 'Gallery'}"> Gallery</span></div>
+  <div (click)="activeClass('Favorite')" class="p-2remm col-md-1"><span [ngClass]="{'borderblue': active === 'Favorite'}"> Favorite</span></div>
+</div>

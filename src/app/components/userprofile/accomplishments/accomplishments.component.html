@@ -1,0 +1,50 @@
+
+<div class="mt2rem bgwhite2 pd2rem">
+   <div class="containerf">
+ <div class="col-2">
+<span><h3>Accomplishments</h3> </span>
+</div>
+<div class="col-2">
+  <span class="fr colorb2"><img class="mr-10px" src="/assets//icons//addicon.svg" />
+  <div class="dropdown">
+  <span class="cp" (click)="dropdevent()">Add Accomplishment</span>
+  <div [ngClass]="{'db': dropd}" class="dropdown-content">
+  <p class="padddd">Awords and honors</p>
+  <p class="padddd">Publications</p>
+  <p class="padddd">Patent</p>
+  <p class="padddd">Project</p>
+  <p class="padddd">Test Score</p>
+  <p class="padddd">Organization</p>
+  </div>
+</div>
+
+  </span>
+</div>
+</div>
+
+<div class="p-1remm" *ngFor="let item of accumplishments; let i=index" >
+<div class="endeduc">
+    <p class="d-inlineb"><span class="counta">{{i+1}} </span> {{item.title}} </p>
+
+</div>
+  </div>
+
+
+<div class="pt-2rem">
+<span><h3>Interested Hobbies</h3> </span>
+
+<div class="contries dinb" *ngFor="let item of hubbies" >
+      <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-3">
+        <img class="whhobies imgcenter w-24px" [src]="item.icon" >
+      </div>
+      <div class="text-left col-md-9 col-sm-9 col-xs-9">
+        <p class="colorlb">{{item.title}}</p>
+      </div>
+      </div>
+</div>
+
+</div>
+
+
+

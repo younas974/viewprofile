@@ -1,0 +1,21 @@
+<div class="mt2rem bgwhite2 pd2rem">
+
+ <div class="">
+<span><h3>Contact Details</h3> </span>
+<!-- <div class="col-2">
+  <span class="fr"><i class="fa fa-pencil colorfapen" aria-hidden="true"></i></span>
+</div> -->
+</div>
+
+<div class="pt-1rem" *ngFor="let item of contactDetails" >
+  <div>
+    <h4 class="fw500">{{item.contactinfo}}</h4>
+  </div>
+  <div>
+    <p>{{item.contactType}}</p>
+  </div>
+</div>
+
+
+
+</div>

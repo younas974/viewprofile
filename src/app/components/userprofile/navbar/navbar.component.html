@@ -1,0 +1,84 @@
+<div class="topnav" id="myTopnav">
+
+  <div class="container paddingcont paddingcontnav">
+    <span class="fl seeka"> Seeka</span>
+    <input class="fl dnm" type="text" name="search" placeholder="Search..">
+    <div class="frn w-m">
+    <a  class=""> </a>
+
+    <a href="#news" (click)="activeClass('home')" >
+      <div class="mobv">
+        <img class="alignbaseline" src="../../../../assets/icons/homeicon.svg" />
+      </div>
+      <div [ngClass]="{'borderb': active === 'home'}" class="mobv">
+        Home
+      </div>
+    </a>
+    <a href="#icon" (click)="activeClass('apply')">
+      <div class="mobv">
+        <img class="alignbaseline" src="../../../../assets/icons/apply.svg" />
+      </div>
+      <div class="mobv" [ngClass]="{'borderb': active === 'apply'}">
+        Apply
+      </div>
+    </a>
+    <a href="#contact" (click)="activeClass('mypeople')">
+      <div class="mobv">
+        <img class="alignbaseline" src="../../../../assets/icons/mypeaple.svg" />
+      </div>
+      <div class="mobv" [ngClass]="{'borderb': active === 'mypeople'}">
+        My people
+      </div>
+    </a>
+
+    <a href="#contact" (click)="activeClass('message')">
+      <div class="mobv">
+        <img class="alignbaseline" src="../../../../assets/icons/message.svg" />
+      </div>
+      <div class="mobv" [ngClass]="{'borderb': active === 'message'}">
+        Messages
+      </div>
+    </a>
+
+    <a href="#contact" (click)="activeClass('notification')">
+      <div class="mobv">
+        <img class="alignbaseline" src="../../../../assets/icons/notification.svg" />
+      </div>
+      <div class="mobv" [ngClass]="{'borderb': active === 'notification'}">
+        Notifications
+      </div>
+    </a>
+
+    <div class="dropdown">
+      <button class="dropbtn borderr">
+        <div><img class="alignbaseline avatornav mr-14px" src="../../../../assets/imgs//profilephoto.jpg" /></div>
+        <div> Me   <i class="fa fa-angle-down fadown"></i></div>
+
+
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div> -->
+
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn pr-0m0">
+        <div><img class="alignbaseline mr-14px mt-10px" src="../../../../assets/icons//place.svg" /></div>
+        <div> Place   <i class="fa fa-angle-down fadown"></i></div>
+      </button>
+      <!-- <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div> -->
+
+    </div>
+
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+  </div>
+

@@ -1,0 +1,17 @@
+<div class="mt2rem bgwhite2 pd2rem">
+  <div class=" ">
+    <h4 class="colorlb">{{title}}</h4>
+  </div>
+  <div class="row">
+    <div class="contries dinb" *ngFor="let item of data" >
+      <div>
+        <img class="w-50px imgcenter" [src]="item.img" >
+      </div>
+      <div class="text-center">
+        <h5 class="colorlb">{{item.title}}</h5>
+      </div>
+    </div>
+
+  </div>
+
+  </div>

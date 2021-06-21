@@ -1,0 +1,16 @@
+
+
+.dinlinebt{
+  display: inline;
+}
+
+
+.toefldd {
+    font-size: 25px;
+    color: blue;
+    /* margin-top: 4px; */
+    margin-left: 2rem;
+    vertical-align: middle;
+    padding-right: 0;
+    margin-right: 0;
+}

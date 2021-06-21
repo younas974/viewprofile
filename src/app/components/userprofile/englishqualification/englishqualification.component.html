@@ -1,0 +1,27 @@
+<div class="mt2rem bgwhite2 pd2rem">
+  <div class="containerf">
+ <div class="col-2">
+<span><h3>English Qualification</h3> </span>
+</div>
+<div class="col-2">
+
+  <span class="fr"><img class="mr-10px" src="/assets//icons//edit.svg" /></span>
+
+</div>
+</div>
+
+<div class="p-1remm" *ngFor="let item of englishqualification" >
+  <div *ngIf="item.title =='TOEFL'"  class="endeduc">
+    <p class="dinlinebt"> <img src="../../../../assets//icons/toefl.svg" /> </p>   <p class="fr d-inlineb fw-b"> Overall: {{item.score.toFixed(1)}}  <i class="fa fa-angle-down fadown toefldd"></i> </p>
+</div>
+
+<div *ngIf="item.title !='TOEFL'" class="endeduc">
+    <p class="d-inlineb"> {{item.title}} </p>   <p class="fr d-inlineb fw-b"> Overall: {{item.score.toFixed(1)}} </p>
+</div>
+  </div>
+
+
+
+  </div>
+
+

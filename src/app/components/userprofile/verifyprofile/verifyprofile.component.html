@@ -1,0 +1,50 @@
+<div class="bgwhite2">
+<div class="padrev ">
+  <h3 class="countrev">
+    181
+  </h3>
+  <div class="pt-1rem">
+    <p>View on your profile for the past month</p>
+  </div>
+</div>
+</div>
+<div class="mt2rem bgwhite2 pd2rem">
+  <div class="p05-1rem">
+    <h3>Verify your profile</h3>
+  </div>
+  <div class="p05-1rem">
+    <h4>Benifits</h4>
+  </div>
+  <div class="p05-1rem">
+    <p>
+      Higher chance of being selected to
+study at an institution.
+<br/>
+<br/>
+More views from your peers,
+institution, and company for future
+opportunities.
+    </p>
+  </div>
+
+  <div class="row pt-1rem" *ngFor="let item of verifyprofile" >
+    <div class="col-md-2 col-sm-2 col-xs-2">
+      <img class="w-18pxfr" [src]="item.icon"  >
+    </div>
+    <div class="col-md-8 col-sm-8 col-xs-8">
+      <h4 class="p0m0 pt-05rem fs13">{{item.title}}</h4>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-2">
+      <span *ngIf="item.status" >
+        <i class="fa fa-check-circle vprofilec"></i>
+      </span>
+
+    </div>
+
+  </div>
+
+
+
+
+</div>
+

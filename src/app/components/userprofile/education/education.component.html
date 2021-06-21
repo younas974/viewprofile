@@ -1,0 +1,51 @@
+
+<div class="mt2rem bgwhite2 pd2rem">
+   <div class="containerf">
+ <div class="col-2">
+<span><h3>Education</h3> </span>
+</div>
+<div class="col-2">
+  <span class="fr colorb2"><img class="mr-10px" src="/assets//icons//addicon.svg" /> Add Education</span>
+</div>
+</div>
+<div class="pt-2rem" *ngFor="let item of this.education" >
+  <div class="row">
+    <div class="col-md-1">
+      <img class="w-50px" [src]="item.school.logo" >
+    </div>
+    <div class="col-md-11">
+
+      <div class="containerf">
+ <div class="col-2">
+<h5 class="m-0 fw-normal">{{item.school.name}}</h5>
+</div>
+<div class="col-2">
+  <span class="fr colorb2"><img class="mr-10px" src="/assets//icons/edit.svg" /></span>
+</div>
+</div>
+
+      <div>
+        <h6 class="meducation"> {{item.title}}   </h6>
+
+    </div>
+    <div>
+      <div >
+      <p>  {{item.school.city}}, {{item.school.country}}
+      </p>
+    </div>
+    <div class="meducation">
+      <p>   {{item.tenure}} | CGPA {{item.cgpa}} | {{item.studytype}} | {{item.language}}
+      </p>
+    </div>
+
+
+  </div>
+    </div>
+
+
+  </div>
+</div>
+<div>
+  <i class="fa fa-angle-down fs-36px ml46" ></i>
+</div>
+</div>
